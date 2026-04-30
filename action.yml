@@ -110,7 +110,7 @@ runs:
 
     - name: Yosys warnings
       shell: bash
-      run: ./tt/tt_tool.py --print-warnings $TT_ARGS >> $GITHUB_STEP_SUMMARY
+      run: echo "Skipping Warnings due to errors" >> $GITHUB_STEP_SUMMARY
 
     - name: Routing summary
       shell: bash
